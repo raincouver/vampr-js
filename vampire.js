@@ -25,7 +25,7 @@ class Vampire {
     let currentCreator = this.creator;
     while (currentCreator) {
       currentCreator = currentCreator.creator;
-      numberOfVampires ++;
+      numberOfVampires++;
     }
 
     return numberOfVampires;
@@ -57,14 +57,14 @@ class Vampire {
     if (this.isMoreSeniorThan(vampire)) {
       while (lineageDifference > 0) {
         vampire = vampire.creator;
-        lineageDifference --;
+        lineageDifference--;
       }
     }
 
     if (!this.isMoreSeniorThan(vampire)) {
       while (lineageDifference > 0) {
         myCreator = myCreator.creator;
-        lineageDifference --;
+        lineageDifference--;
       }
     }
 
